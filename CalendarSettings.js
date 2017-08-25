@@ -130,6 +130,13 @@ define([], function() {
 								label: "Last Month",
 								defaultValue: "Last Month",
                                 expression: "optional"
+                            },
+                            OneYear:{
+                                type: "string",  
+                                ref: "props.oneyear",
+								label: "One Year",
+								defaultValue: "One Year",
+                                expression: "optional"
                             }
                             
 					}
