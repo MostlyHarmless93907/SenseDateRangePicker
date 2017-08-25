@@ -133,7 +133,7 @@ define([], function() {
                             },
                             OneYear:{
                                 type: "string",  
-                                ref: "props.oneyear",
+                                ref: "props.oneYear",
 								label: "One Year",
 								defaultValue: "One Year",
                                 expression: "optional"
