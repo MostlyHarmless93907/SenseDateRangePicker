@@ -166,6 +166,7 @@ define(["qlik", "jquery", "./lib/moment.min", "./CalendarSettings", "css!./css/s
                     rangesLiteral[layout.props.lastXDays.replace("$", "30")] = [moment().subtract(29, 'days'), moment()];
                     rangesLiteral[layout.props.thisMonth] = [moment().startOf('month'), moment().endOf('month')];
                     rangesLiteral[layout.props.lastMonth] = [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')];
+                    rangesLiteral[layout.props.lastMonth] = [moment().subtract(1, 'year'),moment()];
                 }
 
                 $('#' + dateRangeId).daterangepicker(config,
